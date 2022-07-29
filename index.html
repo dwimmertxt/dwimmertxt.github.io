@@ -1,45 +1,44 @@
 <!doctype html>
-<html><head>
+  <html><head>
     <title>terminally unbothered</title>
-     <link href="Comic-Neue.font" rel="stylesheet" type="text/css">
+    <link href="Comic-Neue.font" rel="stylesheet" type="text/css">
   </head>
-    <body style="background: #FFFFF0;">
-      <div style="text-align: center;width: 100%;">
-      <!-- <img src="ijustdontcarelol.png" usemap="#image-map" style="width: 85%;"> -->
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1630 1600" preserveAspectRatio="xMinYMin meet" style="width:85%">
-          <image width="1630" height="1600" xlink:href="./ijustdontcarelol.png" />
-            <rect x="660" y="840" width="200" height="75" fill="none" stroke="black"/>
-            <polygon points="940,861,1007,819,1008,783,1054,782,1067,817,1158,851,1227,841,1247,864,1198,981,1168,992,1140,978,1135,950,1091,930,1050,917,1014,925,966,945,939,920" fill="none" stroke="black" />             
-            <polygon points="1270,830,1309,814,1333,835,1453,799,1466,779,1492,770,1510,792,1515,886,1505,904,1302,953,1271,930" fill="none" stroke="black" />
-            <rect x="274" y="1383" width="810" height="216" fill="none" stroke="black"/>
-        </svg>
+  <body style="background: #FFFFF0;">
+    <div style="text-align: center;width: 100%;">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1630 1600" preserveAspectRatio="xMinYMin meet" style="width:85%">
 
-      <!-- <map name="image-map">
-      <area target="" alt="native" title="native" href=".lol" coords="861,922,652,834" shape="rect">
-      <area target="" alt="okay" title="okay" href="https://16colo.rs/artist/dwimmer" coords="940,861,1007,819,1008,783,1054,782,1067,817,1158,851,1227,841,1247,864,1198,981,1168,992,1140,978,1135,950,1091,930,1050,917,1014,925,966,945,939,920" shape="poly">
-      <area target="" alt="bad" title="bad" href="https://www.instagram.com/dwimmertxt" coords="1270,830,1309,814,1333,835,1453,799,1466,779,1492,770,1510,792,1515,886,1505,904,1302,953,1271,930" shape="poly">
-      <area target="" alt="github" title="github" href="https://github.com/dwimmertxt" coords="274,1600,1090,1383" shape="rect">
-      </map> -->
-    </div>
-    <!-- <p style="position: fixed;bottom: 0px; font-family: 'Comic Neue', arial, serif;">Hex Colour: #FFFFF0 -->
-    <!-- </p> -->
+        <image width="1630" height="1600" xlink:href="./ijustdontcarelol.png" />
+        <a href=".nowhere-yet">
+          <rect x="660" y="840" width="200" height="75" fill="#000000" opacity="0"/>
+        </a>
+        <a href="https://16colo.rs/artist/dwimmer">
+          <polygon points="940,861,1007,819,1008,783,1054,782,1067,817,1158,851,1227,841,1247,864,1198,981,1168,992,1140,978,1135,950,1091,930,1050,917,1014,925,966,945,939,920" fill="#000000" opacity="0" />
+        </a> 
+        <a href="https://www.instagram.com/dwimmertxt/">
+         <polygon points="1270,830,1309,814,1333,835,1453,799,1466,779,1492,770,1510,792,1515,886,1505,904,1302,953,1271,930" fill="#000000" opacity="0" />
+       </a>
+       <a href="https://github.com/dwimmertxt">
+        <rect x="274" y="1383" width="810" height="216" fill="#000000" opacity="0"/>
+      </a>
+    </svg>
+  </div>
     <p style="position: fixed;bottom: 0px; font-family: 'Comic Neue', arial, serif;">Hex Colour: <a id="colourHex" style="cursor:pointer">#FFFFF0</a>
     </p>
-    <input type="color" id="c" tabindex=-1 style="display: none">
-<script>
-function focusAndOpenColourPicker() {
-  document.getElementById("c").focus();
-  document.getElementById("c").value = this.text;
-  document.getElementById("c").click();
-}
+    <input type="color" id="c" tabindex=-1 style="display: none"> 
+  </body></html>
+  <script>
+      function focusAndOpenColourPicker() {
+        document.getElementById("c").focus();
+        document.getElementById("c").value = this.text;
+        document.getElementById("c").click();
+      }
 
-function setColours(event) {
-    document.body.style.background = event.target.value;
-    document.getElementById("colourHex").text = event.target.value.toUpperCase();
-}
+      function setColours(event) {
+        document.body.style.background = event.target.value;
+        document.getElementById("colourHex").text = event.target.value.toUpperCase();
+      }
 
-document.getElementById("colourHex").addEventListener("click", focusAndOpenColourPicker);
+      document.getElementById("colourHex").addEventListener("click", focusAndOpenColourPicker);
 
-document.getElementById("c").addEventListener("change", setColours);
-</script>
-</body></html>
+      document.getElementById("c").addEventListener("change", setColours);
+    </script>
